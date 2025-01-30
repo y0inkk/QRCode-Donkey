@@ -120,6 +120,11 @@ button:hover{
 }
 
 
+.downloadBtn{
+    margin: auto;
+    margin-top: 50px;
+}
+
 
 @media (max-width: 768px) {
     .container{

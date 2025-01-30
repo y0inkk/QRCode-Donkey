@@ -1,6 +1,8 @@
 const class1 = document.querySelector('.class1');
 const class2 = document.querySelector('.class2');
 const urlContainer = document.querySelector('.urlContainer')
+const downlaodBtn = document.querySelector('.downloadBtn');
+const createBtn = document.querySelector('.button');
 
 
 class1.addEventListener('click', ()=>{
@@ -8,10 +10,7 @@ class1.addEventListener('click', ()=>{
     class1.classList.toggle('selected')
 
     urlContainer.classList.remove('hidden');
-
-
-
-    
+    createBtn.classList.remove('hidden');
 })
 
 
@@ -48,5 +47,9 @@ function generateQR(){
             document.querySelector(
                 "input"
             ).value);
+
+
+        downlaodBtn.classList.remove('hidden');
+        createBtn.classList.toggle('hidden');
     }
 }
