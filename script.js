@@ -58,7 +58,6 @@ function generateQR(){
 
 
 function download(){
-    
     const img = document.querySelector('.qrcode img');
 
     fetch(img.src)
@@ -74,8 +73,5 @@ function download(){
             URL.revokeObjectURL(url);
         })
         .catch(error => console.error("Error downloading image:", error));
-
-
-
     location.reload();
 }
