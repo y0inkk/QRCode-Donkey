@@ -158,6 +158,53 @@ button:hover{
 }
 
 
+
+/* vCard Container */
+
+.data{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#fname{
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+#mobileNum{
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+#email{
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.qrcodev{
+    margin: auto;
+}
+
+
+.qrcodev img{
+    width: 120px;
+}
+
+
+.buttonV{
+    margin: auto;
+    margin-top: 50px;
+}
+
+.downloadBtnV{
+    margin: auto;
+    margin-top: 50px;
+}
+
 @media (max-width: 768px) {
     .container{
         width: 87vw;

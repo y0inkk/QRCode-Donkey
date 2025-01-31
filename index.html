@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QRCode Donkey</title>
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,20 +19,15 @@
   </head>
   <body>
     <div class="wrapper">
-
-
       <div class="navbar">
         <div class="navbar-image">
-          <img src="./donkey.jpg" alt="donkey image">
+          <img src="./donkey.jpg" alt="donkey image" />
         </div>
         <div class="navbar-txt">
           <p><span>QRCode</span>donkey</p>
-          <p> Free QR Code Generator</p>
+          <p>Free QR Code Generator</p>
         </div>
       </div>
-
-
-
 
       <div class="list">
         <ul>
@@ -55,7 +50,41 @@
             <button onclick="download()">Download</button>
           </div>
         </div>
+
+        <div class="vcardContainer hidden">
+          <div class="data">
+            <label for="fname">Name: </label>
+            <input type="text" id="fname" required>
+
+
+            <label for="mobileNum">Mobile number: </label>
+            <input type="number" id="mobileNum" placeholder="+91" required>
+
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="QRCodeDonkey@example.com">
+
+
+
+
+          <div class="qrcodev"></div>
+
+          <div class="buttonV">
+            <button onclick="vcardQR()">Create QR Code</button>
+          </div>
+
+          <div class="downloadBtnV hidden">
+            <button onclick="downloadv()">Download</button>
+          </div>
+          </div>
+        </div>
+
       </div>
+
+
+
+
+      
     </div>
   </body>
 </html>
