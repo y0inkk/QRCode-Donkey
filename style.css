@@ -205,6 +205,12 @@ button:hover{
     margin-top: 50px;
 }
 
+.qrcodev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .container{
         width: 87vw;
@@ -217,7 +223,7 @@ button:hover{
 }
 
 
-@media (max-width: 500px){
+@media (max-device-width: 500px){
     .container{
         height: 70vh;
     }
@@ -229,4 +235,11 @@ button:hover{
     .button{
         margin-top: 30px;
     }
+
+    canvas{
+        margin-top: 15px;
+        width: 120px;
+    }
+
+    
 }
